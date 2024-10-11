@@ -11,14 +11,14 @@ while True:
     if letra_usuario in palavra_secreta:
         letra_descoberta += letra_usuario
 
-        palavra_formada = '' 
-        for ps in palavra_secreta:
-            if ps in letra_descoberta:
-                palavra_formada+= ps 
-            else: 
-                palavra_formada+='*'
-                
-        print(palavra_formada)
+    palavra_formada = '' 
+    for ps in palavra_secreta:
+        if ps in letra_descoberta:
+            palavra_formada+= ps 
+        else: 
+            palavra_formada+='*'
+            
+    print(palavra_formada)
 
     if palavra_formada == palavra_secreta:
         break
