@@ -3,9 +3,9 @@ lista_compras = []
 
 
 while True:
-    opcao = input('Digite uma opção\n[i]inserir\n[a]apagar\n[l]listar: ')
+    opcao = input('Digite uma opção\n[i]inserir\n[a]apagar\n[l]listar\n[x]sair: ')
 
-    if len(opcao) >1 or opcao not in 'ail':
+    if len(opcao) >1 or opcao not in 'ailx':
         os.system('clear')
         print('Adicione só um valor ou o valor correto')
         continue
@@ -40,4 +40,9 @@ while True:
         
         for index,item in enumerate(lista_compras):
             print(index,item)
+
+    if opcao == 'x':
+        os.system('clear')
+        break
+print('Programa terminado!!')
     
